@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ecogrid | Energia Inteligente</title>
+<title>Ecogrid | Energia Inteligente Angola</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -20,65 +20,81 @@ scroll-behavior:smooth;
 body{
 background:#0f172a;
 color:white;
+line-height:1.6;
+}
+
+section{
+padding:100px 20px;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+}
+
+h1{
+font-size:60px;
+font-weight:800;
+margin-bottom:20px;
+}
+
+h2{
+font-size:40px;
+margin-bottom:40px;
+text-align:center;
+}
+
+h3{
+font-size:24px;
+margin-bottom:15px;
+color:#22c55e;
+}
+
+p{
+font-size:18px;
+margin-bottom:20px;
+color:#cbd5e1;
 }
 
 /* HERO */
 .hero{
 height:100vh;
-background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
 url("https://images.unsplash.com/photo-1509395176047-4a66953fd231");
 background-size:cover;
 background-position:center;
 display:flex;
 align-items:center;
-justify-content:center;
 text-align:center;
-padding:20px;
 }
 
-.hero h1{
-font-size:48px;
-margin-bottom:20px;
-}
-
-.hero span{
-color:#22c55e;
-}
-
-.hero p{
-font-size:18px;
-margin-bottom:30px;
-max-width:600px;
-margin-left:auto;
-margin-right:auto;
+.hero .container{
+max-width:800px;
 }
 
 .btn{
 background:#22c55e;
-padding:15px 35px;
+padding:18px 40px;
 border-radius:50px;
 color:white;
 text-decoration:none;
 font-weight:600;
 transition:0.3s;
+display:inline-block;
+margin-top:20px;
 }
 
 .btn:hover{
 background:#16a34a;
+transform:scale(1.05);
 }
 
-/* SERVIÇOS */
-.section{
-padding:80px 20px;
-text-align:center;
-}
-
+/* CARDS */
 .cards{
 display:flex;
 flex-wrap:wrap;
-justify-content:center;
 gap:30px;
-margin-top:40px;
+justify-content:center;
 }
 
 .card{
@@ -93,17 +109,29 @@ transition:0.3s;
 transform:translateY(-10px);
 }
 
-.card h3{
-margin-bottom:15px;
-color:#22c55e;
+/* TURBINA */
+.turbina{
+height:500px;
+background:url("https://images.unsplash.com/photo-1466611653911-95081537e5b7");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.turbina h2{
+background:rgba(0,0,0,0.6);
+padding:20px 40px;
+border-radius:20px;
 }
 
 /* FOOTER */
 footer{
 background:#0b1220;
-padding:40px 20px;
+padding:50px 20px;
 text-align:center;
-margin-top:60px;
 }
 
 footer a{
@@ -111,28 +139,28 @@ color:#22c55e;
 text-decoration:none;
 }
 
-/* WhatsApp */
+/* WHATSAPP */
 .whatsapp{
 position:fixed;
 bottom:20px;
 right:20px;
 background:#25D366;
 color:white;
-width:65px;
-height:65px;
+width:70px;
+height:70px;
 border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:30px;
+font-size:32px;
 text-decoration:none;
-box-shadow:0 5px 15px rgba(0,0,0,0.3);
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
 animation:pulse 1.5s infinite;
 }
 
 @keyframes pulse{
 0%{transform:scale(1);}
-50%{transform:scale(1.1);}
+50%{transform:scale(1.15);}
 100%{transform:scale(1);}
 }
 
@@ -141,42 +169,115 @@ animation:pulse 1.5s infinite;
 
 <body>
 
+<!-- HERO -->
 <section class="hero">
-<div>
-<h1>Energia <span>Inteligente</span><br>para um Futuro Sustentável</h1>
-<p>Soluções modernas em energia renovável e eletricidade. Segurança, eficiência e inovação para residências e empresas.</p>
+<div class="container">
+<h1>Ecogrid Angola</h1>
+<p>Energia Renovável, Sistemas Inteligentes e Soluções Elétricas Modernas no Cuito – Bié.</p>
 <a href="https://wa.me/244925390640" class="btn">Solicitar Orçamento</a>
 </div>
 </section>
 
-<section class="section">
+<!-- SERVIÇOS -->
+<section>
+<div class="container">
 <h2>Nossos Serviços</h2>
+
 <div class="cards">
 
 <div class="card">
 <h3>Instalações Elétricas</h3>
-<p>Projetos residenciais e comerciais com alto padrão de segurança e eficiência energética.</p>
+<p>Projetos residenciais e comerciais com máxima segurança e eficiência energética.</p>
 </div>
 
 <div class="card">
-<h3>Sistemas de Energia Solar</h3>
-<p>Implementação de soluções solares inteligentes para redução de custos e sustentabilidade.</p>
+<h3>Energia Solar</h3>
+<p>Instalação de painéis solares e sistemas híbridos para redução de custos.</p>
 </div>
 
 <div class="card">
-<h3>Automação e Eficiência</h3>
-<p>Sistemas inteligentes para controle e otimização do consumo de energia.</p>
+<h3>Sistemas Inteligentes</h3>
+<p>Automação, monitoramento e controle inteligente do consumo energético.</p>
 </div>
+
+</div>
+</div>
+</section>
+
+<!-- TURBINA GRANDE -->
+<section class="turbina">
+<h2>Angola aposta fortemente nas Energias Renováveis</h2>
+</section>
+
+<!-- TEXTO INSTITUCIONAL LONGO -->
+<section>
+<div class="container">
+<h2>Compromisso com o Futuro Energético</h2>
+
+<p>O desenvolvimento sustentável tornou-se prioridade estratégica em Angola, com foco especial na diversificação da matriz energética nacional.</p>
+
+<p>O Estado angolano tem reforçado a necessidade de investimento em fontes renováveis como solar, hídrica e eólica.</p>
+
+<p>A expansão da eletrificação rural é considerada essencial para o crescimento económico e social.</p>
+
+<p>Projetos de mini-redes solares têm sido incentivados para comunidades afastadas.</p>
+
+<p>A redução da dependência de combustíveis fósseis é um objetivo estratégico.</p>
+
+<p>Investimentos públicos e privados têm sido direcionados para infraestrutura energética moderna.</p>
+
+<p>A eficiência energética tornou-se um pilar das políticas públicas.</p>
+
+<p>A modernização da rede elétrica é prioridade nacional.</p>
+
+<p>O incentivo à inovação tecnológica no setor energético cresce anualmente.</p>
+
+<p>Parcerias internacionais fortalecem o desenvolvimento sustentável.</p>
+
+<p>A formação técnica especializada é essencial para garantir qualidade e segurança.</p>
+
+<p>O Bié possui grande potencial para expansão de sistemas solares descentralizados.</p>
+
+<p>Empresas locais desempenham papel fundamental na implementação dessas soluções.</p>
+
+<p>A sustentabilidade energética contribui para estabilidade económica.</p>
+
+<p>O compromisso ambiental é parte da nova visão estratégica nacional.</p>
+
+<p>O acesso universal à energia é meta estruturante.</p>
+
+<p>A digitalização da gestão energética aumenta eficiência operacional.</p>
+
+<p>A transição energética abre novas oportunidades de negócios.</p>
+
+<p>A inovação tecnológica reduz custos a longo prazo.</p>
+
+<p>A Ecogrid posiciona-se como agente ativo nesse novo cenário energético.</p>
+
+<p>No Cuito – Bié, oferecemos soluções adaptadas à realidade local.</p>
+
+<p>Nosso compromisso é contribuir para um futuro mais sustentável.</p>
 
 </div>
 </section>
 
+<!-- CIDADE -->
+<section>
+<div class="container">
+<h2>Atuamos em Cuito – Bié</h2>
+<p>Atendimento rápido, personalizado e profissional para residências, empresas e instituições públicas.</p>
+<a href="https://wa.me/244925390640" class="btn">Chamar no WhatsApp</a>
+</div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-<p>© 2026 Ecogrid - Energia Inteligente</p>
+<p>© 2026 Ecogrid Angola - Energia Inteligente</p>
+<p>Cuito – Bié | WhatsApp: +244 925 390 640</p>
 <p><a href="sobre.html">Sobre Nós</a></p>
 </footer>
 
 <a href="https://wa.me/244925390640" class="whatsapp">💬</a>
 
 </body>
-</html>
+                                       </html>
