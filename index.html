@@ -3,104 +3,137 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ecogrid - Energia Inteligente</title>
+<title>Ecogrid | Energia Inteligente</title>
 
-<!-- Google Font Moderna -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+scroll-behavior:smooth;
+}
+
 body{
-    margin:0;
-    font-family:'Poppins', sans-serif;
-    background:#0f172a;
-    color:white;
+background:#0f172a;
+color:white;
 }
 
-/* HEADER */
-header{
-    padding:60px 20px;
-    text-align:center;
-    background:linear-gradient(135deg,#00c853,#00bfa5);
+/* HERO */
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url("https://images.unsplash.com/photo-1509395176047-4a66953fd231");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
 }
 
-header h1{
-    font-size:40px;
-    margin:0;
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
 }
 
-header p{
-    font-size:18px;
-    opacity:0.9;
+.hero span{
+color:#22c55e;
 }
 
-/* SEÇÕES */
-section{
-    padding:60px 20px;
-    max-width:1000px;
-    margin:auto;
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+max-width:600px;
+margin-left:auto;
+margin-right:auto;
 }
 
-/* CARDS */
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:#1e293b;
-    padding:25px;
-    border-radius:20px;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-}
-
-/* BOTÃO */
 .btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 25px;
-    border-radius:30px;
-    background:#00c853;
-    color:white;
-    text-decoration:none;
-    font-weight:600;
-    transition:0.3s;
+background:#22c55e;
+padding:15px 35px;
+border-radius:50px;
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
 }
 
 .btn:hover{
-    background:#00e676;
+background:#16a34a;
 }
 
-/* WHATSAPP FIXO */
+/* SERVIÇOS */
+.section{
+padding:80px 20px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+width:300px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#22c55e;
+}
+
+/* FOOTER */
+footer{
+background:#0b1220;
+padding:40px 20px;
+text-align:center;
+margin-top:60px;
+}
+
+footer a{
+color:#22c55e;
+text-decoration:none;
+}
+
+/* WhatsApp */
 .whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25d366;
-    color:white;
-    padding:15px 18px;
-    border-radius:50%;
-    font-size:22px;
-    text-decoration:none;
-    animation:pulse 1.5s infinite;
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+animation:pulse 1.5s infinite;
 }
 
 @keyframes pulse{
-    0%{transform:scale(1);}
-    50%{transform:scale(1.1);}
-    100%{transform:scale(1);}
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    background:#111827;
-    font-size:14px;
+0%{transform:scale(1);}
+50%{transform:scale(1.1);}
+100%{transform:scale(1);}
 }
 
 </style>
@@ -108,48 +141,42 @@ footer{
 
 <body>
 
-<header>
-    <h1>Ecogrid</h1>
-    <p>Soluções modernas em Energia Renovável e Eletricidade</p>
-    <a href="#contato" class="btn">Solicitar Orçamento</a>
-</header>
-
-<section>
-    <h2>O Que Fazemos</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>⚡ Instalações Elétricas</h3>
-            <p>Serviços elétricos residenciais e comerciais com segurança e eficiência.</p>
-        </div>
-
-        <div class="card">
-            <h3>☀ Energia Solar</h3>
-            <p>Projetos de energia solar para reduzir custos e aumentar independência energética.</p>
-        </div>
-
-        <div class="card">
-            <h3>🔋 Sistemas Inteligentes</h3>
-            <p>Automação e soluções energéticas modernas para casas e empresas.</p>
-        </div>
-    </div>
+<section class="hero">
+<div>
+<h1>Energia <span>Inteligente</span><br>para um Futuro Sustentável</h1>
+<p>Soluções modernas em energia renovável e eletricidade. Segurança, eficiência e inovação para residências e empresas.</p>
+<a href="https://wa.me/244925390640" class="btn">Solicitar Orçamento</a>
+</div>
 </section>
 
-<section id="contato">
-    <h2>Por Que Escolher a Ecogrid?</h2>
-    <p>
-        Profissional formado em Energia Renovável e Eletricidade,
-        comprometido com qualidade, inovação e sustentabilidade.
-        Nosso foco é oferecer soluções eficientes com atendimento personalizado.
-    </p>
+<section class="section">
+<h2>Nossos Serviços</h2>
+<div class="cards">
 
-    <a href="https://wa.me/SEUNUMEROAQUI" class="btn">Falar no WhatsApp</a>
+<div class="card">
+<h3>Instalações Elétricas</h3>
+<p>Projetos residenciais e comerciais com alto padrão de segurança e eficiência energética.</p>
+</div>
+
+<div class="card">
+<h3>Sistemas de Energia Solar</h3>
+<p>Implementação de soluções solares inteligentes para redução de custos e sustentabilidade.</p>
+</div>
+
+<div class="card">
+<h3>Automação e Eficiência</h3>
+<p>Sistemas inteligentes para controle e otimização do consumo de energia.</p>
+</div>
+
+</div>
 </section>
 
 <footer>
-    © 2026 Ecogrid - Energia Inteligente
+<p>© 2026 Ecogrid - Energia Inteligente</p>
+<p><a href="sobre.html">Sobre Nós</a></p>
 </footer>
 
-<a href="https://wa.me/SEUNUMEROAQUI" class="whatsapp">💬</a>
+<a href="https://wa.me/244925390640" class="whatsapp">💬</a>
 
 </body>
 </html>
