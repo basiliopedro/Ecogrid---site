@@ -1,115 +1,155 @@
-<!DOCTYPE html><html lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ECOGRID – Centro Estratégico</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f6f9;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(135deg, #0f172a, #1e3a8a);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        section {
-            background: white;
-            margin: 20px auto;
-            padding: 25px;
-            max-width: 1000px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-        }
-        h1, h2 {
-            margin-top: 0;
-        }
-        ul, ol {
-            line-height: 1.8;
-        }
-        a {
-            color: #1e3a8a;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            padding: 30px;
-            font-size: 14px;
-            color: #666;
-        }
-        .highlight {
-            background: #e0f2fe;
-            padding: 10px;
-            border-left: 4px solid #0284c7;
-            margin: 10px 0;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ecogrid - Energia Inteligente</title>
+
+<!-- Google Font Moderna -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+/* HEADER */
+header{
+    padding:60px 20px;
+    text-align:center;
+    background:linear-gradient(135deg,#00c853,#00bfa5);
+}
+
+header h1{
+    font-size:40px;
+    margin:0;
+}
+
+header p{
+    font-size:18px;
+    opacity:0.9;
+}
+
+/* SEÇÕES */
+section{
+    padding:60px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* BOTÃO */
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    border-radius:30px;
+    background:#00c853;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#00e676;
+}
+
+/* WHATSAPP FIXO */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25d366;
+    color:white;
+    padding:15px 18px;
+    border-radius:50%;
+    font-size:22px;
+    text-decoration:none;
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.1);}
+    100%{transform:scale(1);}
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#111827;
+    font-size:14px;
+}
+
+</style>
 </head>
-<body><header>
-    <h1>ECOGRID – Centro Estratégico do Fundador</h1>
-    <p>Seu painel pessoal para estudar, organizar e crescer sua empresa técnica.</p>
-</header><section>
-    <h2>📘 Plano Estratégico Resumido</h2>
-    <ul>
-        <li><strong>Foco:</strong> Sistemas solares residenciais (3kW–10kW)</li>
-        <li><strong>Público:</strong> Classe média e pequenos comércios</li>
-        <li><strong>Modelo:</strong> 60–70% antecipado</li>
-        <li><strong>Margem alvo:</strong> 20%–35%</li>
-        <li><strong>Meta 12 meses:</strong> 25 sistemas instalados</li>
-    </ul>
-</section><section>
-    <h2>🧠 Mentalidade do Empresário Técnico</h2>
-    <div class="highlight">Caixa é prioridade. Crescimento vem depois.</div>
-    <ul>
-        <li>Foco antes de expansão</li>
-        <li>Reinvestir os primeiros 12 meses</li>
-        <li>Cliente satisfeito é marketing gratuito</li>
-        <li>Nunca prometer sem cálculo técnico</li>
-        <li>Especialização gera autoridade</li>
-    </ul>
-</section><section>
-    <h2>🌍 Sites para Evolução Mental e Empresarial</h2>
-    <ul>
-        <li><a href="https://www.khanacademy.org/economics-finance-domain" target="_blank">Khan Academy – Economia</a></li>
-        <li><a href="https://www.investopedia.com" target="_blank">Investopedia</a></li>
-        <li><a href="https://www.sebrae.com.br" target="_blank">SEBRAE</a></li>
-        <li><a href="https://www.ycombinator.com/library" target="_blank">Y Combinator Library</a></li>
-        <li><a href="https://www.coursera.org" target="_blank">Coursera</a></li>
-    </ul>
-</section><section>
-    <h2>📱 Ferramentas Gratuitas de Gestão</h2>
-    <ul>
-        <li><a href="https://trello.com" target="_blank">Trello – Organização</a></li>
-        <li><a href="https://notion.so" target="_blank">Notion – Planejamento</a></li>
-        <li><a href="https://docs.google.com/spreadsheets" target="_blank">Google Sheets – Controle Financeiro</a></li>
-        <li><a href="https://canva.com" target="_blank">Canva – Propostas</a></li>
-    </ul>
-</section><section>
-    <h2>📅 Plano de Evolução – 90 Dias</h2>
-    <ol>
-        <li>Estudar economia 30 min por dia</li>
-        <li>Visitar 3 clientes potenciais por semana</li>
-        <li>Criar planilha real de custos</li>
-        <li>Fechar 3 primeiros contratos</li>
-        <li>Reinvestir todo lucro inicial</li>
-    </ol>
-</section><section>
-    <h2>🚀 Próximo Nível</h2>
-    <p>Depois de 6 meses:</p>
-    <ul>
-        <li>Criar portfólio profissional</li>
-        <li>Formalizar plano de manutenção recorrente</li>
-        <li>Construir marca local forte</li>
-        <li>Expandir para outra zona estratégica</li>
-    </ul>
-</section><footer>
-    ECOGRID © 2026 – Construindo independência energética com estratégia.
-</footer></body>
+
+<body>
+
+<header>
+    <h1>Ecogrid</h1>
+    <p>Soluções modernas em Energia Renovável e Eletricidade</p>
+    <a href="#contato" class="btn">Solicitar Orçamento</a>
+</header>
+
+<section>
+    <h2>O Que Fazemos</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>⚡ Instalações Elétricas</h3>
+            <p>Serviços elétricos residenciais e comerciais com segurança e eficiência.</p>
+        </div>
+
+        <div class="card">
+            <h3>☀ Energia Solar</h3>
+            <p>Projetos de energia solar para reduzir custos e aumentar independência energética.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔋 Sistemas Inteligentes</h3>
+            <p>Automação e soluções energéticas modernas para casas e empresas.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contato">
+    <h2>Por Que Escolher a Ecogrid?</h2>
+    <p>
+        Profissional formado em Energia Renovável e Eletricidade,
+        comprometido com qualidade, inovação e sustentabilidade.
+        Nosso foco é oferecer soluções eficientes com atendimento personalizado.
+    </p>
+
+    <a href="https://wa.me/SEUNUMEROAQUI" class="btn">Falar no WhatsApp</a>
+</section>
+
+<footer>
+    © 2026 Ecogrid - Energia Inteligente
+</footer>
+
+<a href="https://wa.me/SEUNUMEROAQUI" class="whatsapp">💬</a>
+
+</body>
 </html>
