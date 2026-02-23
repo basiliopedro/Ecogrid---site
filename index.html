@@ -269,26 +269,61 @@ animation:pulse 1.5s infinite;
   <div class="recipient">
     <h2>Avalie Nosso Protótipo</h2>
 
+    <section id="avaliacao">
+  <div class="container">
+    <h2>Avalie Nosso Protótipo</h2>
+
     <form action="https://formsubmit.co/basiliopedropepe@gmail.com" method="POST">
-      
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="https://basiliopedro.github.io/Ecogrid---site/">
 
-      <input type="text" name="Nome" placeholder="Seu nome" required>
+      <!-- Configurações FormSubmit -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://basiliopedro.github.io/Ecogrid---site/">
 
-      <select name="Avaliacao" required>
-        <option value="">Como avalia o site?</option>
+      <!-- Nome -->
+      <label>Nome</label>
+      <input type="text" name="Nome" placeholder="Digite seu nome" required>
+
+      <!-- Email -->
+      <label>Email</label>
+      <input type="email" name="Email" placeholder="Digite seu email" required>
+
+      <!-- Avaliação -->
+      <label>Como avalia o site?</label>
+      <select name="Avaliação Geral" required>
+        <option value="">Selecione uma opção</option>
         <option value="Excelente">Excelente</option>
         <option value="Muito bom">Muito bom</option>
         <option value="Bom">Bom</option>
+        <option value="Regular">Regular</option>
         <option value="Pode melhorar">Pode melhorar</option>
       </select>
 
-      <textarea name="Comentario" placeholder="Sugestões ou críticas" required></textarea>
+      <!-- Design -->
+      <label>O design é:</label>
+      <select name="Design">
+        <option>Moderno</option>
+        <option>Adequado</option>
+        <option>Pode melhorar</option>
+      </select>
 
+      <!-- Clareza -->
+      <label>As informações são claras?</label>
+      <select name="Clareza das Informações">
+        <option>Sim</option>
+        <option>Mais ou menos</option>
+        <option>Não</option>
+      </select>
+
+      <!-- Comentário -->
+      <label>Sugestões ou críticas</label>
+      <textarea name="Comentário" placeholder="Escreva aqui sua opinião..." rows="4"></textarea>
+
+      <!-- Botão -->
       <button type="submit">Enviar Avaliação</button>
 
     </form>
+  </div>
+    </section>
   </div>
 </section>
 
