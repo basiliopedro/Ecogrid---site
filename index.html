@@ -265,21 +265,30 @@ animation:pulse 1.5s infinite;
 <div class="container">
 <h2>Avalie Nosso Protótipo</h2>
 
-<form action="https://formsubmit.co/basiliopedropepe@gmail.com" method="POST">
-<input type="hidden" name="_captcha" value="false">
-<input type="text" name="Nome" placeholder="Seu nome" required>
-<select name="Avaliação">
-<option value="">Como avalia o site?</option>
-<option>Excelente</option>
-<option>Muito Bom</option>
-<option>Bom</option>
-<option>Pode Melhorar</option>
-</select>
-<textarea name="Comentário" placeholder="Sugestões ou críticas"></textarea>
-<button type="submit">Enviar Avaliação</button>
-</form>
+<section>
+  <div class="recipient">
+    <h2>Avalie Nosso Protótipo</h2>
 
-</div>
+    <form action="https://formsubmit.co/basiliopedropepe@gmail.com" method="POST">
+      
+      <input type="hidden" name="_captcha" value="false">
+
+      <input type="text" name="Nome" placeholder="Seu nome" required>
+
+      <select name="Avaliacao" required>
+        <option value="">Como avalia o site?</option>
+        <option value="Excelente">Excelente</option>
+        <option value="Muito bom">Muito bom</option>
+        <option value="Bom">Bom</option>
+        <option value="Pode melhorar">Pode melhorar</option>
+      </select>
+
+      <textarea name="Comentario" placeholder="Sugestões ou críticas" required></textarea>
+
+      <button type="submit">Enviar Avaliação</button>
+
+    </form>
+  </div>
 </section>
 
 <footer>
